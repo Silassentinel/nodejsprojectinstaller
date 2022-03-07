@@ -1,0 +1,46 @@
+{
+  "name": "nodejsprojectinstaller",
+  "version": "1.0.0",
+  "description": "This app will request all the necesarry info based on either a .env or json file",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node ./src/mainnp, i.js",
+    "cc": "npx prettier --config .prettierrc ./src/ --write && npx eslint ./src/**/*.js --fix -f stylish",
+    "docit": "jsdoc ./ -r -c ./jsdoc.conf.json -d ./docs",
+    "build": "npm run cc && npm run docit && npx babel ./src --out-dir ./dist"
+  },
+    "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/eslint-plugin": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "prettier": "^2.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silassentinel/nodejsprojectinstaller.git"
+  },
+  "keywords": [
+    "installer",
+    "nodejs",
+    "env",
+    "json"
+  ],
+  "author": "Silassentinel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Silassentinel/nodejsprojectinstaller/issues"
+  },
+  "homepage": "https://github.com/Silassentinel/nodejsprojectinstaller#readme"
+}
