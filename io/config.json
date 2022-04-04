@@ -1,0 +1,11 @@
+{
+    "config":{
+    "Installation":{
+        "nodePath":"",
+        "npm":"",
+        "git":"",
+        "project":""
+    },
+    "operationmode":""
+}
+}
